@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html alng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hoverbox.css">
+    <link rel="stylesheet" href="adjustments.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+    <!--Home page-->
+    <section id = "home">
+        <!--Nav-->
+        <nav class=nav>
+            <div class="div">
+                <div class="fullname">
+                    <a href="#">BETH DING</a>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+                <ul class="menu hide">
+                    <li><a href="#"><p class="line">HOME</p></a></li>
+                    <li><a href="#PROJECTS"><p class="line">PROJECTS</p></a></li>
+                    <li><a href="#EXPERIENCE"><p class="line">EXPERIENCE</p></a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
+                    <!-- <li><a href="#">BLOG</a></li> -->
+                </ul>
+            </div>
+            <script src="navbar.js"></script>
+        </nav>
+        <!--End of Nav-->
+
+        <div class = "home container">
+            <div class="intro">
+                <h1>WELCOME TO,  <span></span></to></h1>
+                <h1>BETH W. DING's PORTFOLIO <span></span></h1>
+                <p class="email"><br> Email: bethding0923@gmail.com</p>
+                <div class="links">
+                    <a href="https://github.com/WenrrrBeth" type="button" class="giticon"><img width="40px";height="40px"; src="images/github logo.png"></a>
+                    <a href="https://www.linkedin.com/in/beth-ding/" type="button" class="linkedinicon"><img width="40px";height="40px"; src="images/linkedinicon.png"></a>
+                    <a href="/files/Beth Ding (7).pdf" type="button" class="cta">View resume</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="aboutme">
+                    <h1>About Me: <br></h1>
+                    <img width="100px" src="images/IMG_2263.png">
+                    <p><br>Hello, my name is Beth. I am a fourth-year Computer Sciecne student interested in Software Engineering
+                        and Machine Learning. I am
+                        looking for working experience to expand and use my knowledge. 
+                        I am devoted, hard-working, and passionate about problem-solving.</p>
+                </div>
+                <div class="skills">
+                    <h1>Education:</h1>
+                    <p><span>Degree:</span> Bachelor of Science <br>
+                        <span>Major:</span> Computer Science and Mathematics <br>
+                        <span>Expected Graduation:</span> May 2022<br><br><br>
+                    </p>
+                    <h1>Skills</h1>
+                    <p><span>Coding Languages:</span> <br>Java, Python, HTML/CSS, SQL, C <br><br>
+                    <span>Relevant Knowledge:</span> <br>Object-Oriented Design, Design Patterns, Algorithm, Database Management<br><br>
+                    <span>Project Management Experience:</span> <br>Agile software development practice<br><br>
+                    <span>Spoken Languages:</span> <br>Fluent in both English and Chinese</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Home Page-->
+
+    <!--Project page-->
+    <a name="PROJECTS"></a>
+    <section id="projects">
+        <div class="projects">
+            <div class="projects-top">
+                <h1 class="section-title">PROJECTS</h1>
+                <hr/>
+            </div>
+            <div class="projects-bottom">
+                <!--prj1-->
+                <div class="ml">
+                    <div class="prj-title">
+                        <h2 class="proj-name">Image Detection and Classification<br> on MNISTDD datasets</h2>
+                        <a href="https://github.com/WenrrrBeth/classification-MNISTDD" type="button" class="git">View GitHub</a>
+                    </div>
+                    <div class="ml-lr">
+                        <div class="ml-1">
+                            <p>Trained deep neural networks like DCGAN, CNN models to predict and classify input image datasets.</p>
+                            <img width="156.5px" height="221.75px" src="./images/MNISTdemo.png"/>
+                        </div>
+                        <div class="ml-2">
+                            <h2>My Role</h2>
+                            <p>Using a deep neural network to create a model that classify the digits on the dataset images
+                                 and predict digits' position. My goal is to gain the best classification accuracy and detection
+                                 intersection over union (IoU) in the lowest time possible.<br></p>
+                            <h2>Project Difficulties</h2>
+                            <p>I was initially using VGG-16 model with regression algorithm, yet my model's detection IoU can not reach 
+                                above 90%.<br></p>
+                            <h2>Solution</h2>
+                            <p>Intead of using regression, I tried switching my algorithm to classification. Classifying images into all
+                                possible positions have helped my result increase the detection IoU up to around 95%.<br></p>
+                        </div>
+                        <div class="ml-3">
+                            <div class="list-1">
+                                <h2>Notable Functionalities</h2>
+                                <li>Image Detection</li>
+                                <li>Image Classification</li>
+                            </div>
+                            <div class="list-2">
+                                <h2>Skills/Technologies Used</h2>
+                                <li>Python</li>
+                                <li>Pytorch</li>
+                                <li>Numpy</li>
+                                <li>Linear Algebra</li>
+                                <li>Machine Learning</li>
+                                <li>Deep Neural Network</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--prj1-->
+                </hr>
+                <!--prj2-->
+                <div class="papr">
+                    <div class="prj-title">
+                        <h2 class="proj-name">PAPR-W8</h2>
+                        <a href="https://github.com/CMPUT301F20T22/papr-w8" type="button" class="git">View GitHub</a>
+                    </div>
+                    <div class="papr-lr">
+                        <div class="papr-1">
+                            <p>Android app that allows users to record the books they have and loan them to other users.</p>
+                            <img width="161.75px" height="273.5" src="./images/papr-w8_demo.gif"/>
+                        </div>
+                        <div class="papr-2">
+                            <h2>My Role</h2>
+                            <p>This project was done in an agile environment where my teammates and I meet regularly with the client.
+                                I participated in UI designing, completed functionalities like google maps, navigation bar, etc, 
+                                as well as intent testing.<br></p>
+                            <h2>Project Difficulties</h2>
+                            <p>My biggest concern when starting the project was keeping track of the objects and accessing the objects thoughout different classes and methods.<br></p>
+                            <h2>Solution</h2>
+                            <p>Using a Object-Oriented Design, and apply Design Patterns made the code more organized and the objects more easily accessible.<br></p>
+                        </div>
+                        <div class="papr-3">
+                            <div class="list-1">
+                                <h2>Notable Functionalities</h2>
+                                <li>Account authorization</li>
+                                <li>Registration</li>
+                                <li>Login</li>
+                                <li>Scan QR code</li>
+                                <li>Use Google map to display/store location</li>
+                                <li>Use Firebase to store database</li>
+                            </div>
+                            <div class="list-2">
+                                <h2>Skills/Technologies Used</h2>
+                                <li>Java</li>
+                                <li>Android Studio</li>
+                                <li>Object-Oriented Design</li>
+                                <li>Firebase</li>
+                                <li>Intent Testing</li>
+                                <li>Unit Testing</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--prj2-->
+            </div>
+        </div>
+    </section>
+    <!--End of Project Page-->
+
+    <!--Experience Page-->
+    <a name="EXPERIENCE"></a>
+    <section id="expr">
+        <div class="exprs">
+            <div class="exprs-top">
+                <h1 class="section-title">EXPERIENCE</h1>
+                <hr/>
+            </div>
+            <div class="exprs-bottom">
+
+
+                <div class="hbcontainer">
+                    <div class="box">
+                        <img src="/images/teamupsicence logo.png">
+                        <div class="info">
+                            <div class="non-show">
+                                <div class="title1">
+                                    <h3 class="job-name1">TeamUp Science</h3>
+                                    <p class="job-title1">Group Lead</p>
+                                    <p class="date1">02/2019 - 04/2019</p>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <li><span>Taking care of students participating in the science competition</span></li>
+                                <li><span>Work with TAs to help student with projects in the labs<br><br><br><br><br></span></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/images/uofahospital_logo-removebg-preview.png">
+                        <div class="info">
+                            <div class="non-show">
+                                <div class="title2">
+                                    <h3 class="job-name2">University of Alberta Hospital</h3>
+                                    <p class="job-title2">Volunteer at Division of CT scan/Cardiology/Emergency</p>
+                                    <p class="date2">05/2018 - 03/2020</p>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <li><span>Leading patients to the right places</span></li>
+                                <li><span>Making sure that patients are feeling as comfortable as possible</span></li>
+                                <li><span>Organizing and delivering files; Storage stock up<br><br><br><br></span></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="/images/Intrap logo.png">
+                        <div class="info">
+                            <div class="non-show">
+                                <div class="title3">
+                                    <h3 class="job-name3">InTrap Escape Room</h3>
+                                    <p class="job-title3">Escape Room Host</p>
+                                    <p class="date3">05/2018 - 12/2018</p>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <li><span>Help with game room puzzle designing</span></li>
+                                <li><span>Interacted and guided the players with 
+                                    introductions, instructions, and hints to help them solve 
+                                    the puzzles and escape the room.<br><br><br><br></span></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--End of Experience Page-->
+
+    <!--Contact Page-->
+    <section id="cont">
+        <a name="CONTACT"></a>
+        <div class="conts">
+            <div class="conts-top">
+                <h1 class="section-title">CONTACT</h1>
+                <hr/>
+            </div>
+            <div class="conts-bottom">
+                <h3 class="name">Beth Ding</h3>
+                <p class="email">Email:</p>
+                <p class="emailadd">bethding0923@gmail.com</p>
+                <div class="buttons">
+                    <a href="https://github.com/WenrrrBeth" type="button" class="giticon"><img width="40px";height="40px"; src="images/github logo.png"></a>
+                    <a href="https://www.linkedin.com/in/beth-ding/" type="button" class="linkedinicon"><img width="40px";height="40px"; src="images/linkedinicon.png"></a>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!--End of Contact Page-->
+</body>
+<!-- <body>
+    <nav>
+        <div class = "name">
+            <h1>BETH DING</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">EDUCATION</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">EXPERIENCE</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <script src="navbar.js"></script>
+</body>
+<body>
+    <div class="aboutMe">
+        <img style="width:70px;height:70px;"src="images/IMG_8969.png">
+        <div class="nameheader">
+            <h3>Beth W. Ding</h3>
+        </div>
+        <div class="intro">
+            <p>​
+                I am a fourth-year Bachelor of Science student double majoring in Computer Science 
+                and Mathematics looking for working experience to expand and use my knowledge. 
+                I am devoted, hard-working, and passionate about problem-solving.
+                <br/><br/><b>Email:</b><br/>bethding0923@gmail.com<br/><br/>Other Websites:<br/>
+            </p>
+        </div>
+        <div class="webBar">
+            <a>
+                <img id='li' style="width:30px;height:30px;" src="images/linkedinicon.png">
+            </a>
+            <a>
+                <img id='git' style="width:30px;height:30px;" src="images/github logo.png">
+            </a>
+        </div>
+    </div>
+    <script src="aboutme.js"></script>
+</body> -->
+</html>
