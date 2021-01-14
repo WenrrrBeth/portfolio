@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Warnes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+
+#expr .hbcontainer{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    width: 900px;
+}
+
+#expr .hbcontainer .box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(300px - 30px);
+    height: calc(350px - 10px);
+    float:left;
+    margin: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#expr .hbcontainer .box .info{
+    background-image: url(images/mintgreen.png);
+}
+
+#expr .hbcontainer .box .nonshow{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+#expr .hbcontainer .box .show{
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: 'Avenir Light';
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 15px;
+}
+
+#expr .hbcontainer .box img{
+    max-width: 93%;
+    align-items: center;
+    align-self: center;
+}
+
+#expr .hbcontainer .box:hover img{
+    max-width: 30%;
+    border-radius: 50%;
+    transition: .5s;
+    margin-right: 50%;
+    align-items: center;
+}
+
+#expr .hbcontainer .box:hover{
+    position: relative;
+    background-image: none;
+    transform: .5s;
+}
+
+
+#expr .hbcontainer .box:hover .show{
+    position: relative;
+    overflow: visible;
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -21px;
+    padding-left: 40px;
+    background-image: url("/images/mintgreen.png");
+    background-size: inherit;
+}
+#expr .hbcontainer .box:hover .show li span{
+    position: relative;
+    left: -10px;
+}
+
+#expr .hbcontainer .box .title1{
+    align-items: flex-end;
+    text-align: center;
+    background-image: url("/images/mintgreen.png");
+}
+
+#expr .hbcontainer .box .title1 .job-name1{
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+    line-height: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#expr .hbcontainer .box .title1 .job-title1{
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+#expr .hbcontainer .box .title1 .date1{
+    font-size: 13px;
+    letter-spacing:4px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+#expr .hbcontainer .box .title2{
+    align-items: flex-end;
+    text-align: center;
+    background-image: url("/images/mintgreen.png");
+}
+
+#expr .hbcontainer .box .title2 .job-name2{
+    font-family: 'Yeseva One', cursive;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+#expr .hbcontainer .box .title2 .job-title2{
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#expr .hbcontainer .box .title2 .date2{
+    font-size: 13px;
+    letter-spacing:4px;
+    margin-top: 2px;
+    margin-bottom: 17px;
+}
+
+#expr .hbcontainer .box .title3{
+    align-items: flex-end;
+    text-align: center;
+    background-image: url("/images/mintgreen.png");
+}
+
+#expr .hbcontainer .box .title3 .job-name3{
+    font-family: 'Yeseva One', cursive;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 0px;
+}
+#expr .hbcontainer .box .title3 .job-title3{
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+#expr .hbcontainer .box .title3 .date3{
+    font-size: 13px;
+    letter-spacing:4px;
+    margin-bottom: 22px;
+}
+
