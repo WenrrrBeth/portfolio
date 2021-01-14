@@ -79,7 +79,7 @@
     list-style-position: inside;
     text-indent: -21px;
     padding-left: 40px;
-    background-image: url("/images/mintgreen.png");
+    background-image: url("images/mintgreen.png");
     background-size: inherit;
 }
 #expr .hbcontainer .box:hover .show li span{
@@ -90,7 +90,7 @@
 #expr .hbcontainer .box .title1{
     align-items: flex-end;
     text-align: center;
-    background-image: url("/images/mintgreen.png");
+    background-image: url("images/mintgreen.png");
 }
 
 #expr .hbcontainer .box .title1 .job-name1{
@@ -117,7 +117,7 @@
 #expr .hbcontainer .box .title2{
     align-items: flex-end;
     text-align: center;
-    background-image: url("/images/mintgreen.png");
+    background-image: url("images/mintgreen.png");
 }
 
 #expr .hbcontainer .box .title2 .job-name2{
@@ -144,7 +144,7 @@
 #expr .hbcontainer .box .title3{
     align-items: flex-end;
     text-align: center;
-    background-image: url("/images/mintgreen.png");
+    background-image: url("images/mintgreen.png");
 }
 
 #expr .hbcontainer .box .title3 .job-name3{
