@@ -243,9 +243,16 @@ hr{
     animation: textRevealBox 1s ease;
     animation-delay: 1s;
 }
+
 #home p.email{
     font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+#home p.email span{
+    font-weight: bold;
+}
+
 #home .links{
     display: flex;
     flex-direction: row;
