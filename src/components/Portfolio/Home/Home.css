@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 2550px;
+    height: calc(100vh - 50px);
+    background-image: url("../../../images/home_bg3.png");
+    background-position: right 40% top 80%;
+    background-size: 75%;
+    background-repeat: no-repeat;
+}
+
+.leftHomeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+}
+
+.leftContentContainer {
+    width: 60%;
+    align-self: flex-end;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nameContainer {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 20px;
+}
+
+.subText.top {
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.subText.bottom {
+    font-size: 20px;
+    text-align: right;
+    margin: 0;
+}
+
+.homeName {
+    font-size: 45px;
+    margin: 0px;
+}
+
+.connectContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-self: center;
+    justify-content: center;
+}
+
+.connectProfileImg {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.connectInfo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Arya', sans-serif;
+    color: rgb(99, 99, 99);
+
+}
+
+.myemail {
+    margin: 0px 7px;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline rgb(99, 99, 99);
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    margin-right: 15px;
+}
+
+.text.resume {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border: 2px solid;
+    padding: 4px 9px;
+    margin-left: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    width: fit-content;
+    height: fit-content;
+}
+
+.text.resume:hover {
+    background-color: #d3eee1ba;
+    transition: 1s;
+}
+
+.desc {
+    font-family: 'Quattrocento', serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+}
+
+
+.rightHomeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+}
+
+.rightContentContainer {
+    width: 60%;
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    margin-left: 40px;
+    height: 60vh;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.rightContentContainer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 40px;
+    height: 60vh;
+    border-radius: 30px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.256), rgba(0, 0, 0, 0.605));
+    z-index: 2;
+}
+
+.content {
+    text-align: left;
+    margin-left: 50px;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    color: white;
+}
+
+.displayTitle {
+    margin-top: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.displayTitle[animate="1"] {
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+@keyframes slidein {
+    from {
+        transform: translate(-20px);
+    }
+    to {
+        transform: translate(0px)
+    }
+}
+
+.displayDesc {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.displayDesc[animate="1"] {
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+.displayDescLine {
+    margin: 5px 0px;
+    font-weight: 800;
+    width: 90%;
+}
+
+.ref {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-weight: 600;
+    color: white;
+    text-align: right;
+    align-self: flex-end;
+    z-index: 100;
+}
+
+.navIcon.left {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    bottom: 45%;
+    left: 40px;
+    color: #DBDBDB;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.navIcon.left:hover {
+    color: white;
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff;
+    width: 55px;
+    height: 55px;
+    top: 44%;
+    bottom: 44%;
+}
+
+.navIcon.right {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    bottom: 45%;
+    right: -35px;
+    color: #DBDBDB;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.navIcon.right:hover {
+    color: white;
+    width: 55px;
+    height: 55px;
+    top: 44%;
+    bottom: 44%;
+}
+
+.bottomNav {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    margin-left: 90px;
+
+}
+
+.feather.feather-disc{
+    color: black;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.feather.feather-circle {
+    color: black;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: row;
+        max-width: 2550px;
+        height: calc(100vh - 50px);
+        background-image: url("../../../images/home_bg3.png");
+        background-position: right 40% top 0%;
+        background-size: 85%;
+        background-repeat: no-repeat;
+    }
+
+    .leftContentContainer {
+        width: 75%;
+        align-self: flex-end;
+        margin-right: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .rightContentContainer {
+        width: 75%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .homeContainer {
+        display: flex;
+        /* flex-direction: column; */
+        max-width: 2550px;
+        /* height: calc(100vh - 50px); */
+        height: 100vh;
+        background-image: url("../../../images/home_bg3.png");
+        background-position: right 105% top 30%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .leftHomeContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+    }
+
+
+    .leftContentContainer {
+        width: 70%;
+        align-self: center;
+        margin-right: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc {
+        width: 100%;
+        font-family: 'Quattrocento', serif;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .rightHomeContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .homeContainer {
+        display: flex;
+        /* flex-direction: column; */
+        max-width: 2550px;
+        /* height: calc(100vh - 50px); */
+        height: 100vh;
+        background-image: url("../../../images/home_bg3.png");
+        background-position: right 105% top 30%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .leftHomeContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+    }
+
+
+    .leftContentContainer {
+        width: 70%;
+        align-self: center;
+        margin-right: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc {
+        width: 100%;
+        font-family: 'Quattrocento', serif;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .rightHomeContainer {
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: row;
+        max-width: 2550px;
+        height: calc(100vh - 50px);
+        background-image: url("../../../images/home_bg3.png");
+        background-position: right 40% top 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .homeName {
+        font-size: 33px;
+        margin: 0px;
+    }
+
+    .connectProfileImg {
+        display: none;
+    }
+}
+

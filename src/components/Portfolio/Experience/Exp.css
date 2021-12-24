@@ -1,0 +1,102 @@
+.expContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .expDivider {
+    display: block;
+    background-color: #B3F6DE;
+    width: 400px;
+    height: 5px;
+    margin-left: 22px;
+    margin-top: -8px;
+    border-radius: 10px;
+    z-index: -100;
+} */
+
+.expContentContainer {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.expCard {
+    width: 350px;
+    height: 350px;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.expCardContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.expCard:hover .expCardContent {
+    transform: rotateY(180deg);
+}
+
+.expCardFront, .expCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.expCardFront {
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0px 0px 0px grey;
+    -webkit-transition:  box-shadow .6s ease-out;
+    box-shadow: .8px .9px 3px grey; 
+    color: black;
+}
+
+.expCardBack {
+    background-color: #2E3047;
+    color: white;
+    transform: rotateY(180deg);
+    box-shadow: 0px 0px 0px grey;
+    -webkit-transition:  box-shadow .6s ease-out;
+    box-shadow: .8px .9px 3px grey; 
+}
+
+
+@media screen and (max-width: 960px) {
+    .expContentContainer {
+        width: 700px;
+        display: grid;
+        grid-template-columns: 350px 350px;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .expContentContainer {
+        width: 400px;
+        display: grid;
+        grid-template-columns: 350px;
+        gap: 50px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .expCard {
+        width: 350px;
+        height: 350px;
+        background-color: transparent;
+        perspective: 1000px;
+    }
+}
